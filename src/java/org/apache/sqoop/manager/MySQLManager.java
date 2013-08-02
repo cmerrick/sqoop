@@ -211,6 +211,11 @@ public class MySQLManager
   }
 
   @Override
+  public boolean escapeTableNameOnExport() {
+      return true;
+  }
+
+  @Override
   public boolean supportsStagingForExport() {
     return true;
   }
